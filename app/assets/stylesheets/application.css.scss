@@ -15,3 +15,10 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+.fa-user-secret{
+  color:black;
+  margin-top:11px;
+}
