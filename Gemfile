@@ -11,7 +11,7 @@ group :production do
   gem 'rails_12factor'
 end
 #use bootstrap for styling
-gem 'bootstrap-sass', '3.3.4'
+gem 'bootstrap-sass', '~> 3.3.4'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
