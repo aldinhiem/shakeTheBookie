@@ -19,15 +19,24 @@
       <i class="fa fa-user-secret fa-2x pull-left"></i>
       <%= link_to 'ShakeTheBookie', root_path, class: 'navbar-brand'  %>
     </div>
+    
+    
     <div class="collapse navbar-collapse" id="main-nav-collapse">
+      
+      <div class="nav navbar-nav navbar-right">
+        <% if current_user %>
+        <%= link_to 'Sign Out', destroy_user_session_path , class: 'btn btn-primary navbar-btn', method: :delete %>        
+        <% else %>
+          <%= link_to 'Sign Up', new_user_registration_path , class: 'btn btn-primary navbar-btn', method: :get %>
+          <%= link_to 'Log In', new_user_session_path , class: 'btn btn-warning navbar-btn'method: :get %>
+        <% end %>
+     </div>
+      
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to 'About', about_path %></li>
         <li><%= link_to 'Contact Us', new_contact_path %></li>
       </ul>
-      <div class="nav navbar-nav navbar-right">
-        <li><%= link_to 'Sign Up', new_user_session_path, class: 'btn btn-primary navbar-btn' %></li>
-        <li><%= link_to 'Log In', new_user_registration_path, class: 'btn btn-warning navbar-btn' %></li>
-      </div>
+      
     </div>
     
   </div>
