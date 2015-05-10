@@ -18,6 +18,10 @@ gem 'font-awesome-sass', '~> 4.3.0'
 gem 'sass-rails', '~> 4.0.3'
 #use devise for user auth
 gem 'devise'
+#use stripe for payment processing
+gem 'stripe', '~> 1.21.0'
+
+gem 'figaro', '~> 1.1.1'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
