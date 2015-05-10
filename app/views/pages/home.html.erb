@@ -7,7 +7,7 @@
     <div class="well">
       <h3>Basic Account</h3>
       <p>Sign up for a free account! </p>
-      <%= link_to 'Go Basic', new_user_registration_path(@basic_plan.id), class: 'btn btn-block btn-lg btn-primary' %>
+      <%= link_to 'Go Basic', new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-block btn-lg btn-primary' %>
     </div>
   </div>
   
@@ -15,7 +15,7 @@
     <div class="well">
       <h3>Pro Account</h3>
       <p>Sign up for a Pro account!. Get all upcoming tips and be a part of the community. </p>
-      <%= link_to 'Go Pro', new_user_registration_path(@pro_plan.id), class: 'btn btn-block btn-lg btn-warning' %>
+      <%= link_to 'Go Pro', new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-block btn-lg btn-warning' %>
     </div>
   </div>
 </div>
